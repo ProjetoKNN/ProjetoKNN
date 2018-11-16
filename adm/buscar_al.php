@@ -51,6 +51,7 @@
                             <table class='table table-sm'>
                                 <thead class='bg-danger' style="color: white;">
                                     <tr>
+                                        <th>Código</th>
                                         <th>Nome</th>
                                         <th>CPF</th>
                                         <th>RG</th>
@@ -91,8 +92,8 @@
                                         }
                                     //se tudo deu certo, exibe os dados
                                     while($dados = mysqli_fetch_assoc($consulta)){
-                                        //echo "<td>" .$dados['cod']. "</td>";
                                         echo "<tr>";
+                                        echo "<td>" .$dados['cod']. "</td>";
                                         echo "<td>" .$dados['nome']. "</td>";
                                         echo "<td>" .$dados['cpf']. "</td>";
                                         echo "<td>" .$dados['rg']. "</td>";

@@ -20,7 +20,7 @@
     $NovoEmail = filter_input(INPUT_POST, 'email');
 
     //Estabelece a conexão com o mysql
-   
+
     if(!$conexao){
         header("Location:../buscar_al.php?alteracao=false");
         exit;

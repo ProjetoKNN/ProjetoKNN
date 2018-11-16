@@ -3,7 +3,7 @@ include ("../../conexao.php");
 session_start();
 $nome = $_SESSION['nomeAluno'];
 unset($_SESSION['nomeAluno']);
-
+echo "AQUI ".$_SESSION['codAluno'];
 if (isset($_SESSION['codAluno'])) 
 {
     $codigoAluno = $_SESSION['codAluno'];

@@ -74,7 +74,7 @@ function formatar(mascara, documento){
         <h3 id="h1Busca">Alteração de dados</h3>
         <form action="php/salva_al.php" method="post">
             <!-- Jogamos os valores a serem editados dentro dos inputs no campo value -->
-            <input type="hidden" name="cod" value="<?php echo $cod; ?>">
+            Código: <input type="text" name="cod" readonly="readonly" class="form-control" value="<?php echo $cod; ?>"><br>
             Nome:<input type="text" name="nome" class="form-control" value="<?php echo $nome; ?>"><br>
             CPF:<input type="text" name="cpf" maxlength="14" class="form-control" OnKeyPress="formatar('###.###.###-##', this)" value="<?php echo $cpf; ?>"><br>
             RG:<input type="text" name="rg" maxlength="10" class="form-control" OnKeyPress="formatar('##.###.###', this)" value="<?php echo $rg; ?>"><br>

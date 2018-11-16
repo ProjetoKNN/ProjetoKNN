@@ -10,11 +10,14 @@
     <body>
         <a href="adm_func.php"><button>Voltar</button></a>
         <form action="../adm/php/lancaPagamento.php" method="POST">
-            CPF Aluno: <input type="text" name="cpf" value="" />
-            <input type="submit" value="busca" />
-             Codigo Aluno: <input type="text" name="cod" value="" />
+            Codigo Aluno: <input type="text" name="cod" value="" />
             <input type="submit" value="busca" />
         </form>
+
+        <form action="php/lancapagamentocpf.php" method="POST">
+        	CPF Aluno: <input type="text" name="cpf" value="" />
+            <input type="submit" value="busca" />
+        </form> <br>
         <script src="../jquery/dist/jquery.js"></script>
         <script src="popper.js/dist/popper.js"></script>
         <script src="../js/bootstrap.js"></script>
